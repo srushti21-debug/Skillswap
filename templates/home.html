@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkillSwap | Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2 class="logo">SkillSwap</h2>
+    <ul class="menu">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="#explore">Explore Skills</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="{{ url_for('join') }}">Join</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero" id="home">
+    <h1>Teach what you know. Learn what you love.</h1>
+    <p>Join a friendly community where people exchange skills with each other.</p>
+    <a href="{{ url_for('join') }}"><button>Start Swapping</button></a>
+  </div>
+
+  <!-- How It Works -->
+  <div class="section" id="how">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="box">
+        <h3>Step 1</h3>
+        <p>Create your profile and list your skills.</p>
+      </div>
+      <div class="box">
+        <h3>Step 2</h3>
+        <p>Find someone who matches your learning goals.</p>
+      </div>
+      <div class="box">
+        <h3>Step 3</h3>
+        <p>Exchange your knowledge and grow together!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trending Skills -->
+  <div class="section" id="explore">
+    <h2>Top Trending Skills</h2>
+    <div class="skills">
+      <div class="skill">Graphic Design</div>
+      <div class="skill">Python Programming</div>
+      <div class="skill">Guitar</div>
+      <div class="skill">Public Speaking</div>
+      <div class="skill">Photography</div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="section" id="community">
+    <h2>What Users Say</h2>
+    <div class="testimonials">
+      <p>"I learned Photoshop while teaching English! Great experience." - <b>Riya</b></p>
+      <p>"SkillSwap helped me make new friends and learn guitar." - <b>Rahul</b></p>
+    </div>
+  </div>
+
+  <!-- Join CTA -->
+  <div class="cta">
+    <h2>Join SkillSwap Today!</h2>
+    <a href="{{ url_for('join') }}"><button>Join Now</button></a>
+  </div>
+
+  <footer>
+    <p>© 2025 SkillSwap | Created by SEAJ</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='home.js') }}"></script>
+</body>
+</html>

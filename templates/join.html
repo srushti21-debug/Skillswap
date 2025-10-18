@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join SkillSwap</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='join.css') }}">
+</head>
+<body>
+
+  <div class="navbar">
+    <h2 class="logo">SkillSwap</h2>
+    <ul class="menu">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="#explore">Explore</a></li>
+      <li><a href="#community">Community</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h1>Join SkillSwap</h1>
+    <p>Start exchanging your skills today!</p>
+
+    <form method="POST">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Email" required>
+
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Password" required>
+
+      <label>Skill you can teach</label>
+      <input type="text" name="teach" placeholder="e.g. Graphic Design" required>
+
+      <label>Skill you want to learn</label>
+      <input type="text" name="learn" placeholder="e.g. Guitar" required>
+
+      <button type="submit">Join Now</button>
+    </form>
+
+    <div class="back-link">
+      <a href="{{ url_for('home') }}">← Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
