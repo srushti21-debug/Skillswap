@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillSwap | About & Help</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">SkillSwap</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore Skills</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="chat.html">Chat</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>About SkillSwap 🌍</h1>
+    <p>Where learning meets sharing — grow your skills while helping others grow theirs.</p>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <h2>Our Mission 🚀</h2>
+    <p>
+      SkillSwap was built with a simple idea: learning should be free, collaborative, and fun.
+      We connect people who want to learn new skills with those who can teach — no money, just mutual growth.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h3>🤝 Community First</h3>
+        <p>Our users form a supportive community that believes in learning through connection and exchange.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Verified Skills</h3>
+        <p>We ensure trust through verified skills, certificates, and active engagement badges.</p>
+      </div>
+      <div class="card">
+        <h3>💡 Continuous Growth</h3>
+        <p>With progress tracking and challenges, every swap helps you learn something new.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions ❓</h2>
+
+    <div class="faq-item" onclick="toggleFAQ(this)">
+      <h3>How do I start swapping skills?</h3>
+      <p class="answer">Create a profile, list what you can teach and what you want to learn, then browse others to find your match!</p>
+    </div>
+
+    <div class="faq-item" onclick="toggleFAQ(this)">
+      <h3>Is SkillSwap free to use?</h3>
+      <p class="answer">Yes! SkillSwap is completely free — we promote mutual learning without money barriers.</p>
+    </div>
+
+    <div class="faq-item" onclick="toggleFAQ(this)">
+      <h3>How do I verify my skills?</h3>
+      <p class="answer">Upload certificates or get peer verification from other learners on the platform.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us 📬</h2>
+    <p>Have questions or suggestions? We’d love to hear from you!</p>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="4" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SkillSwap | Built with ❤️ by learners for learners.</p>
+  </footer>
+
+  <script src="about.js"></script>
+</body>
+</html>

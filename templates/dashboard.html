@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillSwap | Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">SkillSwap</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore Skills</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="chat.html">Chat</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard Layout -->
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Dashboard</h3>
+      <ul>
+        <li class="active" onclick="showSection('swaps')">🔁 My Swaps</li>
+        <li onclick="showSection('schedule')">📅 My Schedule</li>
+        <li onclick="showSection('progress')">📊 Progress Tracker</li>
+        <li onclick="showSection('notifications')">🔔 Notifications</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- My Swaps -->
+      <section id="swaps" class="section active">
+        <h2>🔁 My Skill Swaps</h2>
+        <div class="card">
+          <h3>🎨 Riya — UI/UX Design</h3>
+          <p>In exchange for: Python Basics</p>
+          <p>Status: Ongoing</p>
+          <button>Open Chat</button>
+        </div>
+        <div class="card">
+          <h3>💻 Aarav — Web Development</h3>
+          <p>In exchange for: English Speaking</p>
+          <p>Status: Completed ✅</p>
+        </div>
+      </section>
+
+      <!-- My Schedule -->
+      <section id="schedule" class="section">
+        <h2>📅 My Schedule</h2>
+        <ul class="schedule-list">
+          <li>🗓 Monday 4 PM — Web Dev Session with Aarav</li>
+          <li>🗓 Wednesday 6 PM — UI Design Review with Riya</li>
+          <li>🗓 Friday 5 PM — Python Practice Meetup</li>
+        </ul>
+      </section>
+
+      <!-- Progress Tracker -->
+      <section id="progress" class="section">
+        <h2>📊 Progress Tracker</h2>
+        <div class="progress-bar">
+          <p>Web Development</p>
+          <div class="bar"><div class="fill" style="width: 80%;">80%</div></div>
+        </div>
+        <div class="progress-bar">
+          <p>Python Basics</p>
+          <div class="bar"><div class="fill" style="width: 65%;">65%</div></div>
+        </div>
+        <div class="progress-bar">
+          <p>English Speaking</p>
+          <div class="bar"><div class="fill" style="width: 45%;">45%</div></div>
+        </div>
+      </section>
+
+      <!-- Notifications -->
+      <section id="notifications" class="section">
+        <h2>🔔 Notifications</h2>
+        <ul class="notif-list">
+          <li>✅ Riya completed your “Python Basics” session!</li>
+          <li>🗓 Reminder: Web Dev session tomorrow at 5 PM.</li>
+          <li>💡 Tip: Try adding projects to your profile to attract more learners!</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

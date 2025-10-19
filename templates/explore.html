@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap | Explore Skills</title>
+  <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">SkillSwap</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html" class="active">Explore Skills</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Search and Filter Section -->
+  <section class="search-section">
+    <h1>Find People Who Can Teach You</h1>
+    <input type="text" id="searchBar" placeholder="Search for a skill...">
+
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="tech">Technology</option>
+        <option value="art">Art & Design</option>
+        <option value="business">Business</option>
+        <option value="personal">Personal Development</option>
+      </select>
+
+      <select id="levelFilter">
+        <option value="all">All Levels</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <select id="modeFilter">
+        <option value="all">All Modes</option>
+        <option value="online">Online</option>
+        <option value="offline">Offline</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Skill Cards Section -->
+  <section class="skills-grid" id="skillsContainer">
+    <!-- Cards will be added dynamically using JS -->
+  </section>
+
+  <script src="explore.js"></script>
+</body>
+</html>

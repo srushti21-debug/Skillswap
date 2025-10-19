@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap | Chat & Collaboration</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">SkillSwap</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore Skills</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Chat Container -->
+  <div class="chat-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Ongoing Swaps</h3>
+      <ul>
+        <li class="active">💻 Web Dev with Aarav</li>
+        <li>🎨 Design with Riya</li>
+        <li>📈 Marketing with Isha</li>
+      </ul>
+    </aside>
+
+    <!-- Chat Window -->
+    <main class="chat-window">
+      <div class="chat-header">
+        <h2>💻 Web Dev with Aarav</h2>
+        <button id="videoCallBtn">📹 Start Video Call</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="message incoming">👋 Hey! Ready for today’s session?</div>
+        <div class="message outgoing">Yes! Let’s begin. I was reviewing HTML basics.</div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="emojiBtn">😊</button>
+        <button id="fileBtn">📎</button>
+        <button id="sendBtn">Send</button>
+      </div>
+    </main>
+
+    <!-- Right Panel -->
+    <aside class="right-panel">
+      <h3>Upcoming Sessions</h3>
+      <ul>
+        <li>🗓 HTML Basics — Tomorrow, 5 PM</li>
+        <li>🗓 CSS Flexbox — Monday, 4 PM</li>
+      </ul>
+      <h3>Reminders</h3>
+      <ul>
+        <li>💡 Complete JavaScript notes</li>
+      </ul>
+    </aside>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
