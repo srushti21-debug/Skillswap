@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap | Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">SkillSwap</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore Skills</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Section -->
+  <section class="profile-container">
+    <div class="profile-header">
+      <img src="https://i.ibb.co/8b4wDLH/default-avatar.png" class="profile-pic" alt="Profile Photo">
+      <div class="profile-info">
+        <h2>Riya Sharma</h2>
+        <p>📍 Delhi, India | 🌍 Passionate Learner & Teacher</p>
+        <button id="swapRequestBtn">Send Swap Request</button>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="teach">Skills I Can Teach</button>
+      <button class="tab" data-tab="learn">Skills I Want to Learn</button>
+      <button class="tab" data-tab="reviews">Ratings & Reviews</button>
+      <button class="tab" data-tab="history">Swap History</button>
+    </div>
+
+    <!-- Content -->
+    <div class="tab-content active" id="teach">
+      <ul>
+        <li>🎨 Graphic Design <span class="badge verified">Verified</span></li>
+        <li>🖋 Content Writing <span class="badge certified">Certified</span></li>
+      </ul>
+      <button class="verify-btn">+ Add Certificate</button>
+    </div>
+
+    <div class="tab-content" id="learn">
+      <ul>
+        <li>💻 JavaScript Basics</li>
+        <li>📈 Data Visualization</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="reviews">
+      <p>⭐ 4.8/5 average rating</p>
+      <blockquote>“Riya is an amazing teacher!” — Aditya</blockquote>
+    </div>
+
+    <div class="tab-content" id="history">
+      <p>Past swaps:</p>
+      <ul>
+        <li>🖋 Content Writing ↔ 💻 HTML Basics</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="profile.js"></script>
+</body>
+</html>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 SkillSwap. All rights reserved.</p>
+    </footer>
