@@ -6,10 +6,10 @@ app = Flask(__name__)
 # Home page
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 # Join page
-@app.route('/join', methods=['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST'])
 def join():
     if request.method == 'POST':
         name = request.form['name']
@@ -25,9 +25,9 @@ def join():
         conn.commit()
         conn.close()
 
-        return redirect(url_for('home'))
+        return redirect(url_for('index'))
 
-    return render_template('join.html')
+    return render_template('register.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
