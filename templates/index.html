@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap - Home</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">SkillSwap</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Swap Skills, Connect Minds</h1>
+  <p>Learn from others and share what you know</p>
+  <a href="register.html" class="start-swapping-btn">Start Swapping 🚀</a>
+</section>
+
+<!-- Trending Skills -->
+<section class="trending-skills">
+  <h2>Top Trending Skills</h2>
+  <div class="skills-container" id="skills-container">
+    <!-- JS will populate trending skills -->
+  </div>
+</section>
+
+<!-- Aurora Particles Background -->
+<canvas id="particles"></canvas>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

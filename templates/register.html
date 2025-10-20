@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap - Register</title>
+  <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">SkillSwap</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="register-section">
+  <div class="register-card">
+    <h2>Create Your Profile</h2>
+    <form id="register-form" enctype="multipart/form-data">
+      
+      <div class="form-group">
+        <input type="text" name="name" required placeholder="Enter your full name">
+        <label>Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" required placeholder="Enter your email address">
+        <label>Email</label>
+      </div>
+
+      <div class="form-group">
+        <input type="password" name="password" required placeholder="Choose a password">
+        <label>Password</label>
+      </div>
+
+      <div class="form-group file-upload">
+        <label>Profile Picture</label>
+        <input type="file" name="profilePic" accept="image/*">
+      </div>
+
+      <div class="form-group file-upload">
+       <label>Certificates</label>
+       <input type="file" name="certificates" accept=".pdf,.jpg,.png" multiple>
+       <small>You can upload multiple files (PDF, JPG, PNG)</small>
+      </div>
+
+      <div class="form-group">
+        <textarea name="teachSkills" placeholder="List skills you can teach, separated by commas" required></textarea>
+        <label>Skills You Can Teach</label>
+      </div>
+
+      <div class="form-group">
+        <textarea name="learnSkills" placeholder="List skills you want to learn, separated by commas" required></textarea>
+        <label>Skills You Want to Learn</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Register & Start Swapping</button>
+    </form>
+  </div>
+</section>
+
+<script src="../js/register.js"></script>
+</body>
+</html>

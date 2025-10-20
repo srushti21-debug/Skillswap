@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap - Dashboard</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">SkillSwap</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="chat.html">Chat</a></li>
+  </ul>
+</nav>
+
+<section class="dashboard-section">
+  <div class="profile-card">
+    <img src="" alt="Profile Picture" id="profile-pic">
+    <h2 id="profile-name"></h2>
+    <p id="profile-email"></p>
+
+    <div class="skills">
+      <h3>Skills I Teach</h3>
+      <div id="teach-skills" class="skill-tags"></div>
+
+      <h3>Skills I Want to Learn</h3>
+      <div id="learn-skills" class="skill-tags"></div>
+    </div>
+
+    <div class="certificates">
+      <h3>Certificates</h3>
+      <div id="certificates-container"></div>
+    </div>
+
+    <button id="start-swapping-btn">Start Swapping 🔄</button>
+  </div>
+
+  <div class="stats-card">
+    <h3>Dashboard Stats</h3>
+    <canvas id="chart-skills" height="200"></canvas>
+    <canvas id="chart-progress" height="200"></canvas>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/dashboard.js"></script>
+</body>
+</html>

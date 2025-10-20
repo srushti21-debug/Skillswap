@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap - Chat</title>
+  <link rel="stylesheet" href="../css/chat.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">SkillSwap</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="chat-section">
+  <div class="chat-container">
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type a message...">
+      <input type="file" id="file-input">
+      <button id="send-btn">Send</button>
+      <button id="video-btn">🎥 Video Call</button>
+    </div>
+  </div>
+</section>
+
+<canvas id="particles"></canvas>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="../js/chat.js"></script>
+</body>
+</html>
