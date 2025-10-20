@@ -1,0 +1,41 @@
+:root {
+  --primary: #7C3AED;
+  --secondary: #A78BFA;
+  --accent: #F3E8FF;
+  --bg: #0B032D;
+  --light: #FFFFFF;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+body { overflow-x:hidden; position:relative; background: linear-gradient(135deg,var(--primary),var(--secondary)); color: var(--light); }
+
+/* Navbar */
+nav { display:flex; justify-content:space-between; padding:1rem 3rem; position:fixed; width:100%; top:0; z-index:100; background: rgba(0,0,0,0.25); backdrop-filter: blur(10px);}
+nav .logo { font-weight:700; font-size:1.8rem;}
+nav ul { display:flex; list-style:none; gap:2rem; }
+nav ul li a { color: var(--light); text-decoration:none; transition:0.3s; position:relative;}
+nav ul li a:hover { transform:scale(1.05); color: var(--accent);}
+nav ul li a::after { content:''; position:absolute; bottom:-3px; left:0; width:0%; height:2px; background: var(--accent); transition:0.3s;}
+nav ul li a:hover::after { width:100%; }
+
+/* Hero */
+.hero { height:90vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; animation:gradientMove 15s ease infinite; }
+.hero h1 { font-size:3rem; text-shadow:0 0 15px var(--accent); animation:floatText 3s ease-in-out infinite; }
+.hero p { font-size:1.2rem; margin:1rem 0; text-shadow:0 0 10px var(--accent);}
+.start-swapping-btn { display:inline-block; padding:1rem 2rem; border-radius:50px; background: linear-gradient(135deg,var(--primary),var(--secondary)); text-decoration:none; color: var(--light); font-weight:700; transition:0.3s; box-shadow:0 0 20px rgba(124,58,237,0.6);}
+.start-swapping-btn:hover { transform:scale(1.05) translateY(-3px); box-shadow:0 0 40px rgba(124,58,237,0.8); }
+
+/* Trending Skills */
+.trending-skills { padding:5rem 2rem 2rem 2rem; text-align:center; }
+.trending-skills h2 { font-size:2rem; margin-bottom:2rem; }
+.skills-container { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; }
+.skill-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(12px); border-radius:20px; padding:1.5rem 2rem; color:var(--light); font-weight:600; cursor:pointer; transition:0.3s; animation:popIn 0.8s ease forwards;}
+.skill-card:hover { transform:scale(1.05) translateY(-5px); box-shadow:0 0 25px rgba(124,58,237,0.5); }
+
+/* Particles */
+#particles { position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
+
+/* Animations */
+@keyframes gradientMove { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+@keyframes floatText { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes popIn { from{opacity:0; transform:scale(0.9);} to{opacity:1; transform:scale(1);} }
