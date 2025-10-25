@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SkillSwap - Register</title>
-  <link rel="stylesheet" href="../css/register.css">
+  <link rel="stylesheet" href="../css/register.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2c5b5f36a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -19,46 +23,52 @@
 
 <section class="register-section">
   <div class="register-card">
-    <h2>Create Your Profile</h2>
+    <h2><i class="fas fa-user-plus"></i> Create Your Profile</h2>
+
     <form id="register-form" enctype="multipart/form-data">
       
-      <div class="form-group">
-        <input type="text" name="name" required placeholder="Enter your full name">
-        <label>Name</label>
+      <div class="form-group">Name
+        <input type="text" name="name" required placeholder="Enter your full name" />
       </div>
 
-      <div class="form-group">
-        <input type="email" name="email" required placeholder="Enter your email address">
-        <label>Email</label>
+      <div class="form-group">E-mail
+        <input type="email" name="email" required placeholder="Enter your email address" />
       </div>
 
-      <div class="form-group">
-        <input type="password" name="password" required placeholder="Choose a password">
-        <label>Password</label>
+      <div class="form-group">Password
+        <input type="password" name="password" required placeholder="Choose a password" />
       </div>
 
-      <div class="form-group file-upload">
-        <label>Profile Picture</label>
-        <input type="file" name="profilePic" accept="image/*">
+      <!-- Profile Picture Upload -->
+      <div class="file-upload">
+        <label><i class="fas fa-image"></i> Profile Picture</label>
+        <div class="file-box">
+          <input id="profilePic" type="file" name="profilePic" accept="image/*" />
+          <span id="profilePicText">Choose a profile photo</span>
+        </div>
+        <img id="profilePreview" src="" alt="Preview" class="file-preview" style="display:none;">
       </div>
 
-      <div class="form-group file-upload">
-       <label>Certificates</label>
-       <input type="file" name="certificates" accept=".pdf,.jpg,.png" multiple>
-       <small>You can upload multiple files (PDF, JPG, PNG)</small>
+      <!-- Certificates Upload -->
+      <div class="file-upload">
+        <label><i class="fas fa-certificate"></i> Certificates</label>
+        <div class="file-box">
+          <input id="certificates" type="file" name="certificates" accept=".pdf,.jpg,.png" multiple />
+          <span id="certificatesText">Upload PDF, JPG, or PNG files</span>
+        </div>
       </div>
 
-      <div class="form-group">
-        <textarea name="teachSkills" placeholder="List skills you can teach, separated by commas" required></textarea>
-        <label>Skills You Can Teach</label>
+      <div class="form-group">Skills You Can Teach
+        <textarea name="teachSkills" placeholder="List skills you can teach (separated by commas)" required></textarea>
       </div>
 
-      <div class="form-group">
-        <textarea name="learnSkills" placeholder="List skills you want to learn, separated by commas" required></textarea>
-        <label>Skills You Want to Learn</label>
+      <div class="form-group">Skills You Want to Learn
+        <textarea name="learnSkills" placeholder="List skills you want to learn (separated by commas)" required></textarea>
       </div>
 
-      <button type="submit" class="submit-btn">Register & Start Swapping</button>
+      <button type="submit" class="submit-btn">
+        <i class="fas fa-sync-alt"></i> Register & Start Swapping
+      </button>
     </form>
   </div>
 </section>
